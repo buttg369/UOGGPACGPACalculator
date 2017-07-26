@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/gpa"
+            android:title="GPA" />
+        <item
+            android:id="@+id/cgpa"
+            android:title="CGPA" />
+            android:title="CGPA" />
+        <item
+            android:id="@+id/sc"
+            android:title="Sessional Counter" />
+        android:title="CGPA" />
+    </group>
+
+    <item android:title="About">
+        <menu>
+            <item
+                android:id="@+id/about"
+                android:title="About us" />
+        </menu>
+    </item>
+
+</menu>
