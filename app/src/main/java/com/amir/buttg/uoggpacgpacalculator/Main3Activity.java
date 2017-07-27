@@ -12,6 +12,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class Main3Activity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -35,6 +38,10 @@ public class Main3Activity extends AppCompatActivity
         ft.commit();
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        AdView t_adView = (AdView) findViewById(R.id.adView5);
+        AdRequest t_adRequest = new AdRequest.Builder()
+                .setRequestAgent("custom").build();
+        t_adView.loadAd(t_adRequest);
     }
 
     @Override

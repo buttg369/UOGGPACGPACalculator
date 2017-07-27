@@ -83,6 +83,7 @@ public class AtLoadFragment extends Fragment {
         sec.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                showInterstitial();
                 FragmentManager fm = getActivity().getSupportFragmentManager();
                 FragmentTransaction ft = fm.beginTransaction();
                 BlankFragment count = new BlankFragment();
